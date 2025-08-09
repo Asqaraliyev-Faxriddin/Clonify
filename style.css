@@ -396,7 +396,7 @@
         position: relative;
         display: flex;
         right: 85px;
-        gap: 30px;
+        gap: 22px;
         margin-right:210vh !important;
     }
 
@@ -425,7 +425,7 @@
             position: absolute;
             margin-top: 2195px !important;
             width: 100%;
-            max-width: 720px;
+            max-width: 780px;
             right: 10px !important;
         }
 
