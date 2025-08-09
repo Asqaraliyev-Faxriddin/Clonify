@@ -404,6 +404,10 @@
     @media (max-width: 768px) {
 
     
+        header {
+            max-width: 768px;
+        }
+
         .footer_bottom {
             max-width: 668px;
         }
@@ -426,7 +430,7 @@
             margin-top: 2195px !important;
             width: 100%;
             max-width: 740px;
-            right: 90px !important;
+            right: 40px !important;
         }
 
         .birxil_top {
