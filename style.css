@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   
+   
+   
+   body {
+        display: flex;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        flex-direction: column;
+        background-color: white;
+    }
+
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: #f7f3f3;
+    }
+        .logo {
+            position: relative;
+            display: flex;
+            width: 100%;
+            max-width: 1400px;
+            height: 100px;
+            font-weight: bold;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1;
+        }
+    .logo img {
+        width: 25px;
+        margin-right: 8px;
+    }
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+    .icons {
+        display: flex;
+        gap: 15px;
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .navbar_list {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
+    li {
+        list-style-type: none;
+    }
+
+    .iteam {
+        width: 28px;
+        transition: 0.7s ease-in-out;
+
+        font-weight: bold;
+        color: black;
+    }
+
+    .iteam:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: 0.7s ease-in-out;
+    }
+
+    .home_iteam {
+        position: relative; 
+        padding: 5px 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .home_iteam::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        background-color: black;
+        transition: width 0.4s ease; 
+    }
+
+    .home_iteam:hover::after {
+        width: 100%;
+    }
+
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: box-shadow 0.3s ease;
+        box-shadow: none; 
+    }
+
+    header.scrolled {
+        box-shadow: 0 4px 10px rgba(0,0,0,0.12) !important;  
+    }
+
+    .menu_sum {
+        display: flex;
+        max-width: 65vh;
+    }
+
+    .bola_img {
+        margin-top: 3vh;
+        margin-left: 0vh;
+    }
+
+
+    .container {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        max-width: 1600px;
+        min-height: 95vh;
+        padding: 0 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .bola_img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .bola_text {
+        max-width: 500px;
+    }
+
+    .bola_text span {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .bola_text h1 {
+        font-size: 42px;
+        line-height: 1.2;
+        margin: 15px 0;
+    }
+
+    .bola_text p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .bola_text span:last-child {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+    .bola_img {
+        transition: 0.3s ease;
+        transform: scale(0.9);
+    }
+
+
+    .bola_img {
+        position: relative;
+    }
+
+
+    .birxiltop {
+        margin: 0 auto;
+        transition: all 2s ease;
+
+    }
+
+
+
+    .birxil_top:hover {
+        animation-name: Aylana;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    .birxil_top:not(:hover){
+        animation: AylanaKichik 1s ease forwards;
+
+    }
+
+    @keyframes Aylana {
+        from{
+
+            transform: rotate(0deg) scale(1);
+            transition: 1s ease;
+        }
+
+        to {
+
+            transform: rotate(360deg) scale(1.2);
+            transition: 2s ease;
+        }
+    }
+
+
+    @keyframes AylanaKichik {
+        from {
+            transform: rotate(0deg) scale(1.3);
+        }
+        to {
+            transform: rotate(-360deg) scale(1);
+        }
+    }
+
+
+
+    .bola_img:hover {
+        transform: scale(0.7);
+        transition: 1s ease;
+    }
+
+
+
+    main {
+        flex: 1;
+    }
+
+
+    .main_logos {
+        
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        margin-top: 6vh !important;
+        margin: 0 auto;
+        align-items: center;
+        width: 91.5%;
+        border-right: 20vh;
+        height: 20vh;
+        justify-items: center;
+
+        border-top: 3px solid #e2e5ea;
+        border-bottom: 3px solid #e2e5ea;
+    }
+
+    .qalin {
+        font-weight: 700;
+    }
+    .bola {
+        text-align: center;
+        margin: 0 auto;
+        transition: 1s ease;
+    }
+
+    .birxil_top2 {
+    border-radius: 50%;
+    -webkit-box-shadow: 2px 4px 32px 22px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 4px 32px 22px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 4px 32px 22px rgba(34, 60, 80, 0.2);
+    }
+
+    .togirlan {
+        margin: 0 auto;
+        text-align: center;
+        justify-items: center;
+        display: block;
+        margin-top: 3vh; 
+
+    }
+
+
+
+    .bola:hover {
+        -webkit-box-shadow: 2px 4px 32px 22px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 4px 32px 22px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 4px 32px 22px rgba(34, 60, 80, 0.2);
+        transform: scale(1.1);
+        transition: 1s ease;
+    }
+
+    .bola_rasmlari {
+        margin-top: 70px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .bola {
+        height: 86vh;
+    }
+
+
+    .main_logos {
+        background-color: white;
+    }
+
+
+    footer {
+        padding: 40px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        gap: 20px; 
+    }
+
+
+    .jamla {
+        margin-bottom: 30px;
+        margin-left: 13vh;
+        display: flex;
+        gap: 10vh;
+        justify-content: left;
+    }
+
+    .footer_container svg {
+        margin-bottom: 15px;
+    }
+
+    .footer_container p {
+        color: #4a5568;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer_container p span {
+        font-weight: bold;
+        color: black;
+        font-size: 15px;
+    }
+
+    .footer_container i {
+        font-size: 20px;
+        margin-right: 15px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .footer_container i:hover {
+        color: #007bff;
+    }
+
+    footer hr {
+        border: none;
+        border-top: 1px solid #000;
+        margin: 40px auto 10px;
+        max-width: 1200px;
+    }
+
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .footer_container{
+        overflow: hidden;
+    }
+
+
+
+    @media (max-width: 768px) {
+
+        .footer_bottom {
+            max-width: 668px;
+        }
+
+        .footer hr {
+            max-width: 668px;
+        }
+
+        .bola_img{
+            top: 30px;
+        }
+
+        .bola_rasmlari{
+            gap: 60px !important;
+        }
+
+        .footer_container{
+           background-color: #f5f1f1; 
+            position: absolute;
+            margin-top: 2195px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .birxil_top {
+            display: none;
+        }
+        nav {
+        
+            display: none;
+            padding: 10px 0;
+        }
+        .container {
+            display: block;
+            justify-content:center;
+            flex-direction: column;
+            gap: 30px;
+            top: 9vh;
+            height: 105vh;
+            text-align: center;
+        }
+        .bola_text {
+            margin: 0 auto;
+            font-size: 32px;
+        }
+
+        .bola_rasmlari {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+
+
+        .logo {
+            display: flex;
+            width: 100%;
+            max-width: 1900px;
+            height: 100px;
+            font-weight: bold;
+            margin: 0 auto;
+            align-items: center;    
+            justify-content:space-between;
+        } 
+
+        .menu_sum {
+            margin-left: 240px; 
+        }
+        .navbar_list {
+            display: none;
+        }
+        nav.active {
+            display: flex;
+        }
+        .menu-toggle {
+            display: block;
+        }
+
+        .main_logos {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            justify-items: center;
+            align-items: center;
+            text-align:center;
+            gap: 14px;
+            margin: 0 auto; 
+            margin-right: 0;
+            margin-left: 0;
+            height: 30vh;
+            padding: 0px 20px;
+        }
+
+
+        .footer_container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer_container > div {
+            flex: none;
+            width: 100%; 
+        }
+
+        .footer_container img {
+            max-width: 150px;
+            height: auto;
+        }
+    
+    }
+
