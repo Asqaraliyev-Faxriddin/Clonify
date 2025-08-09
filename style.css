@@ -431,7 +431,7 @@
             width: 100%;
             max-width: 740px;
             right: 50px !important;
-            left: 60px;
+            left: 60px !important;
         }
 
         .birxil_top {
