@@ -395,7 +395,8 @@
     .menu_sum {
         position: relative;
         display: flex;
-        right: 75px;
+        right: 85px;
+        gap: 30px;
         margin-right:210vh !important;
     }
 
@@ -424,7 +425,7 @@
             position: absolute;
             margin-top: 2195px !important;
             width: 100%;
-            max-width: 650px;
+            max-width: 720px;
             right: 10px !important;
         }
 
