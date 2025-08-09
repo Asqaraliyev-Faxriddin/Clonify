@@ -429,9 +429,8 @@
             position: absolute;
             margin-top: 2195px !important;
             width: 100%;
-            left: 260vh !important;
-            margin-left: 60vh !important;
             max-width: 740px;
+            margin-left: 18px !important;
         }
 
         .birxil_top {
@@ -472,6 +471,18 @@
             align-items: center;    
             justify-content:space-between;
         } 
+
+        .jamla {
+            display: grid;
+            gap: 5;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: start;
+            justify-items: start;
+            align-items: start;
+            justify-self: center;
+            text-align: center;
+            left: 160px !important; 
+        }
 
         .menu_sum {
             margin-left: 240px; 
